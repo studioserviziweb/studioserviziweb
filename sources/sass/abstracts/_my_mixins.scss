@@ -1,9 +1,0 @@
-// ##### Media Query #####
-
-@mixin bp($point, $point2: none) {
-  @if $point2 == none {
-    @media (min-width: #{$point}) { @content; }
-	} @else {
-    @media (min-width: #{$point}) and (max-width: #{$point2}) { @content; }
-	}
-}
