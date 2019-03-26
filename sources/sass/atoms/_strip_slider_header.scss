@@ -1,0 +1,85 @@
+.strips
+{
+  position: absolute;
+  right: 0;
+
+  .strip
+  {
+    color: $white;
+    background-color: $red;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  	padding: 10px;
+  	margin: 5px 0;
+  	box-shadow: $one-px-shadow;
+  	display: block;
+  	width: 50px;
+    position: absolute;
+    right: 0;
+    margin-left: -50px;
+  	// transform: translateX(0);
+  	// transition: transform .8s ease-in-out;
+
+  	&:focus,
+  	&:hover {
+  		// color: $white;
+  		text-decoration: none;
+  		// transform: translateX(-300px);
+      // left: -65px;
+  	}
+
+  	img {
+  		height: 19px;
+  		width: 19px;
+  	}
+
+  	span {
+  		padding: 0 20px;
+  		line-height: 1;
+  	}
+    &.strip-pos1
+    {
+      top: 70px;
+    }
+    &.strip-pos2
+    {
+      top: 115px;
+    }
+
+  }
+  .strip-num-verde
+  {
+    display: none;
+    background-color: $white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 0 20px;
+    margin: 5px 0;
+    width: 140px;
+    position: absolute;
+    text-decoration: none;
+    right: 0;
+    top: 20px;
+    margin-left: -50px;
+    box-shadow: $one-px-shadow;
+
+    @include bp($dk)
+    {
+      display: block;
+    }
+    span.verde
+    {
+      color: $green;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    span.num
+    {
+      color: $black;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 400;
+    }
+
+  }
+}

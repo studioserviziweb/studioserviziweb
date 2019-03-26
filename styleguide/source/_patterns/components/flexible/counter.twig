@@ -1,0 +1,26 @@
+{% spaceless %}
+{# Variables set #}
+{% set title = contents.title|default(empty) %}
+{% set items = contents.item %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-counter">
+	<div class="flex-head">
+		<h2>{{title}}</h2>
+	</div>
+	<div class="container">
+		<div class="flex-counter-container">
+			<div class="row align-items-center">
+				{% for item in items %}
+					<div class="item">
+						<div class="item-bg" style="background: url('{{item.image.url}}') no-repeat center center; background-size:cover;">
+								<h2 class="item-value">{{item.valore}}</h2>
+								<div class="item-um">{{item.um}}</div>
+						</div>
+						<div class="item-label">{{item.label}}</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

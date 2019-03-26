@@ -1,0 +1,61 @@
+.breakingnews {
+	&-news {
+		@extend .breakingnews-head;
+		text-transform: none;
+		color: $text-color;
+		background-color: transparent;
+		padding: 10px 20px;
+		font-weight: $font-weight-medium;
+		display: inline-block;
+		position: relative;
+
+		&::after {
+			display: none;
+		}
+
+		@include bp($tb) {
+			padding: 20px;
+			background-color: $gray-th;
+
+		}
+
+		h3 {
+			font-size: (12 / 16) * 1rem;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.slick {
+	$self: &;
+
+	&-slide {
+		&#{$self}-active {
+			&.breakingnews {
+				&-news {
+					&::before {
+						content: '/';
+						position: absolute;
+						top: 17px;
+						left: -6px;
+					}
+				}
+			}
+
+			&#{$self}-current {
+				&.breakingnews {
+					&-news {
+						&::before {
+							content: '';
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+}

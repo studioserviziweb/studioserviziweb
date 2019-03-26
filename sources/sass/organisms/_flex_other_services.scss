@@ -1,0 +1,102 @@
+body.home-template-page-servizi-home {
+	.slider {
+		display: none;
+	}
+
+	.o-section {
+		margin: 7.5rem 0 0;
+		@include bp($tb) {
+			margin: 13.5rem 0 0;
+		}
+	}
+}
+
+body.page-template-page-negozi {
+	.flex {
+		&-other-services {
+			.container {
+				.item-services {
+					.content {
+						h3 {
+							color: $black;
+						}
+
+						&.bg-gray {
+							background-color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.flex {
+	&-other-services {
+		margin: 1.5rem 0;
+		padding: 1.5rem 1rem;
+
+		.container {
+			.flex-head {
+				h2 {
+					position: relative;
+					color: $blue;
+
+					&::before {
+						content: '';
+						display: block;
+						position: absolute;
+						background-color: #fed443;
+						height: 3rem;
+						width: 3rem;
+						top: -.3rem;
+						left: -1rem;
+						border-radius: 100%;
+						z-index: -1;
+					}
+				}
+
+				p {
+					font-size: 1.25rem;
+					font-weight: $font-weight-light;
+					margin-bottom: 2rem;
+					color: $blue;
+				}
+			}
+
+			.item-services {
+				.image {
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: auto;
+					min-height: 320px;
+				}
+
+
+				.content {
+					padding: 4rem;
+					background-color: $white;
+
+					&.bg-gray {
+						background-color: $gray-th;
+
+					}
+
+					h3 {
+						width: 100%;
+						color: $yellow;
+						text-align: left;
+						margin: 0;
+						margin-bottom: 1rem;
+					}
+
+					p {
+						width: 100%;
+						text-align: left;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}

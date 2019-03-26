@@ -1,0 +1,32 @@
+.flex {
+  &-image_link{
+    padding-top: 4rem;
+		padding-bottom: 4rem;
+
+		.flex-head {
+			text-align: center;
+
+			p {
+				margin-left: auto;
+				margin-right: auto;
+
+				@include bp($tb) {
+					width: 90%;
+				}
+			}
+		}
+
+    &-img{
+      margin: 2rem auto;
+
+      a{
+        img {
+  				width: 100%;
+  				height: auto;
+  			}
+      }
+
+
+    }
+  }
+}

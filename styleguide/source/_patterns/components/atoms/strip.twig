@@ -1,0 +1,12 @@
+{% spaceless %}
+
+{% set link = item.strip.link|default(empty) %}
+{% set image = item.strip.image|default(empty) %}
+{% set label = item.strip.label|default(empty) %}
+{% set form = item.strip.form|default(empty) %}
+{% set id_num = id_num %}
+
+{% endspaceless %}<a href="#str_cont{{id_num}}" class="strip strip-pos{{id_num}}">
+	{% if image is not empty %}<img src="{{image.url}}" /> {% endif %}
+</a>
+{% include 'components/atoms/strip_container.twig' with {item: item , id_num:id_num,api:api} only %}

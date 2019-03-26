@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "patternSrc": "styleguide/source",
+  "patternPublicSrc": "styleguide/public",
+  "rootSrc": "sources",
+  "useDeporder": false,
+  "watchFileForReload": ["webroot/wp-content/themes/studioserviziweb/assets/js/**/*.js"],
+  "proxyUrl": "http://localhost",
+  "exposeJQuery": true,
+  "webpackResolveOverride": {},
+  "modernizrTests": []
+}

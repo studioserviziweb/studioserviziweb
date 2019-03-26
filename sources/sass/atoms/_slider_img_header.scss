@@ -1,0 +1,201 @@
+.slider {
+	&-img {
+		&-header {
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+			padding-bottom: 120%;
+			background-size: cover !important;
+
+			@include bp(570px, $tb) {
+				padding-bottom: 60%;
+			}
+
+			@include bp($tb) {
+				padding-bottom: 48%;
+			}
+
+			@include bp(1930px) {
+				padding-bottom: 920px;
+				background-size: contain !important;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			&.nonav {
+				padding-bottom: 90%;
+
+				@include bp(570px, $tb) {
+					padding-bottom: 50%;
+				}
+
+				@include bp($tb) {
+					padding-bottom: 48%;
+				}
+
+				@include bp(1930px) {
+					padding-bottom: 920px;
+					background-size: contain !important;
+				}
+			}
+			&.nomobslide {
+				// height: 70px !important;
+				@include bp(0px,450px) {
+					height: 70px !important;
+				}
+				@include bp(450px,$dk) {
+					height: 75px !important;
+				}
+				// @include bp($dk) {
+				// 	height: 390px !important;
+				// }
+			}
+		}
+	}
+}
+
+.page-template {
+	&-page-dovesiamo {
+		.slider {
+			&-img {
+				&-header {
+					width: 100%;
+					height: 320px;
+					overflow: hidden;
+					padding-bottom: 0;
+					background-color: $white !important;
+
+
+					// &.nomobslide {
+					// 	height: 75px;
+					// }
+
+					@include bp(450px) {
+						height: 200px;
+					}
+
+					@include bp($dk) {
+						height: 400px;
+					}
+
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+
+	&-page-contacts,
+	&-page-areaclienti,
+	&-page-news {
+		.slider {
+			&-img {
+				&-header {
+					width: 100%;
+					height: 320px;
+					overflow: hidden;
+					padding-bottom: 0;
+					background-color: $white !important;
+
+					// &.nomobslide {
+					// 	height: 75px;
+					// }					
+					@include bp(450px) {
+						height: 300px;
+					}
+
+					@include bp($dk) {
+						height: 500px;
+
+					}
+
+					img {
+						width: 100%;
+						height: auto;
+					}
+
+				}
+			}
+		}
+	}
+
+	&-page-contacts {
+		.slider {
+			&-img {
+				&-header {
+					height: 250px;
+
+					@include bp($dk) {
+						height: 300px;
+					}
+
+					@include bp($hd-dk) {
+						height: 330px;
+					}
+				}
+
+			}
+
+			&-data {
+				top: 10rem;
+
+				@include bp(320px, $tb) {
+					width: 80%;
+				}
+
+				@include bp($tb) {
+					top: 12rem;
+
+				}
+
+				@include bp($dk) {
+					top: 16rem;
+				}
+
+				@include bp($hd-dk) {
+					top: 18rem;
+				}
+			}
+		}
+	}
+
+	&-page-areaclienti {
+		.slider {
+			&-img {
+				&-header {
+					height: 300px;
+
+					@include bp(575px) {
+						height: 250px;
+					}
+
+					@include bp($dk) {
+						height: 390px;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+.pa-template {
+	&-page-conventions {
+		@extend .page-template-page-contacts;
+
+		.flex-list-district {
+			margin-top: 0;
+		}
+
+		@include bp($dk) {
+			.breadcrumbs {
+				display: block !important;
+			}
+		}
+	}
+}

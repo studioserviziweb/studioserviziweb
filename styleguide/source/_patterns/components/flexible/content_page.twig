@@ -1,0 +1,10 @@
+{% spaceless %}
+{# Variables set #}
+{% set description = contents.description|default(empty) %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-content-page container">
+	<div class="row">
+		{% if description is not empty %}{{description|raw}}{% endif %}
+	</div>
+</div>

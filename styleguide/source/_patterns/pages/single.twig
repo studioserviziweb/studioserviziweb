@@ -1,0 +1,24 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="container single-container">
+	<div class="row">
+
+		<div class="col-md-8">
+
+			{% include 'components/organisms/header_single.twig' with {image: post.thumbnail, title: post.title, subtitle: post.post_subtitle } only %}
+
+			{% include 'components/organisms/content_single.twig' with {post: post, site: site, relatedPosts: relatedPosts } only %}
+
+		</div>
+
+		<aside class="col-md-4 sidebar">
+			{% include 'components/organisms/sidebar.twig' with { sidebar: sidebar, sideCustom: sideCustom } only %}
+
+		</aside>
+
+	</div>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{
+  "name": "sicuritalia",
+  "homepage": "https://github.com/IsobarItaly/sicuritalia-web",
+  "authors": [
+    "Isobar"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "swiper": "^4.2.5",
+    "jQuery.dotdotdot": "dotdotdot#^3.2.2",
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

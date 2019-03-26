@@ -1,0 +1,20 @@
+.flex {
+	&-title-desc {
+		h3 {
+			font-weight: $font-weight-base;
+			margin-bottom: 1.2rem;
+			margin-top: 1.5rem;
+		}
+	}
+}
+
+body.agency-template-page-ss {
+	.flex {
+		&-title-desc {
+			h2 {
+				color: $black!important;
+				text-align: center!important;
+			}
+		}
+	}
+}

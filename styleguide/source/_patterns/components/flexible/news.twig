@@ -1,0 +1,59 @@
+{% spaceless %}
+
+{#
+  :: News - Vetrina ::
+
+  PARAMS:
+	- carousel:    		  										{<object>}
+  ---- title:															{<string>}
+  ---- subtitle:													{<string>}
+  ---- sections:            			    		{<object>}
+  -------- section:            			    	{<string>}
+  ---- posts:		            			    		{<object>}
+  -------- post:													{<object>}
+  ------------ title 											{<string>}
+	------------ description								{<string>}
+	------------ section 										{<string>}
+	------------ link 											{<string>}
+
+
+
+  USAGE:
+  - include
+#}
+
+{# Variables set #}
+{% set news = contents %}
+{% set title = news.title|default(empty) %}
+{% set subtitle = news.subtitle|default(empty) %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex--news container">
+	{% if title is not empty %}
+		<div class="flex-head">
+			<h2>{{title}}</h2>
+			{% if (subtitle is not empty) %}<p>{{subtitle}}</p>{% endif %}
+		</div>
+	{% endif %}
+
+{% if news.aree %}
+	<div class="filter">
+			<div class="mob-filter">
+				<span class="down">Filtra per</span> <span class="choice"></span>
+			</div>
+			<p>Filtra per :</p>
+			<ul>
+				{% for area in news.aree %}
+					<li>
+						<a href="#{{area.name}}" data-id="{{area.term_id}}" data-name="{{area.slug}}">{{area.name|raw}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+	</div>
+	{% endif %}
+
+	<div id="news-wrapper" class="flex--news--content row">
+		{% include 'components/molecules/news_items.twig' with { items : news.items } only %}
+	</div>
+
+</div>

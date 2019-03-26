@@ -1,0 +1,18 @@
+{% extends "base.twig" %}
+
+{% block contentTop %}
+	{% include 'components/organisms/slider.twig' with { slider: slider, single: true } only %}
+{% endblock %}
+
+{% block content %}
+
+	<div class="content-page" style="margin-top: 50px;">
+		<div class="container">
+			<div class="row">
+				{{ post.content }}
+			</div>
+		</div>
+	</div>
+
+	{% include "flexible_content.twig" with { "flexibleContent" : flexibleContent } only %}
+{% endblock %}

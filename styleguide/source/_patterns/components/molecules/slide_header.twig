@@ -1,0 +1,32 @@
+<div class="slider-container">
+	<div class="slider-img-header{% if noNav %} nonav{% endif %}" data-mob-image-url="{{slide.image_mobile.url}}" data-dk-image-url="{{slide.image.url}}" style="background: #103073 no-repeat center;">
+		<div class="container">
+
+			<div class="slider-data">
+
+				{% if slide.title %}
+					{% include 'components/atoms/slider_title.twig' %}
+				{% endif %}
+
+				{% include 'components/atoms/slider_text.twig' %}
+				{% if slide.bg_color %}
+					{% set ctaInverted = 0 %}
+				{% else %}
+					{% set ctaInverted = 1 %}
+				{% endif %}
+
+				{% if slide.link is defined and slide.link is not empty %}
+					{% include 'components/atoms/cta.twig' with {
+						link : slide.link,
+						label: 'scopri di più',
+						inverted: ctaInverted
+					} %}
+				{% endif %}
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

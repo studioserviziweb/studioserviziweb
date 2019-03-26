@@ -1,0 +1,19 @@
+.slider {
+	&-nav {
+		&-dot {
+			width: 6px;
+			height: 6px;
+			border-radius: 100%;
+			background-color: $blue;
+			margin: 7px;
+
+			&.current {
+				width: 13px;
+				height: 13px;
+				margin: 0;
+				border: 1px solid $blue;
+				box-shadow: inset 0 0 0 3px $white;
+			}
+		}
+	}
+}

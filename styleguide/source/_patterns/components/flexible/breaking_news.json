@@ -1,0 +1,80 @@
+{
+  "layout": "breaking_news",
+  "contents": {
+    "brNews": {
+      "day": {
+        "name": "mercoled\u00ec",
+        "number": "30 Mag",
+        "d": "30",
+        "m": "05",
+        "y": "2018",
+        "h": "11:52"
+      },
+      "text": {
+        "first": "Breaking",
+        "second": "News"
+      },
+      "items": [{
+        "title": "Israel : Gaza militants fire mortar barrage at southern areas.",
+        "link": "#",
+        "region": "IL.01",
+        "country": "ISR",
+        "lang": "it"
+      }, {
+        "title": "Afghanistan: Nine civilians killed in eastern Afghan province.",
+        "link": "#",
+        "region": "AF.18",
+        "country": "AFG",
+        "lang": "it"
+      }, {
+        "title": "Iraq : Blast wounds two police officers in Kirkuk",
+        "link": "#",
+        "region": "IQ.13",
+        "country": "IRQ",
+        "lang": "it"
+      }, {
+        "title": "Pakistan : Armed men shoot police officer in Dera Ismail Khan",
+        "link": "#",
+        "region": "PK.03",
+        "country": "PAK",
+        "lang": "it"
+      }, {
+        "title": "Egypt : Army kills eight militants in Sinai",
+        "link": "#",
+        "region": "EG.26",
+        "country": "EGY",
+        "lang": "it"
+      }, {
+        "title": "India - Southwest monsoon begins in Kerala state",
+        "link": "#",
+        "region": null,
+        "country": "IND",
+        "lang": "it"
+      }, {
+        "title": "Man shoots dead three, takes hostage in Liege",
+        "link": "#",
+        "region": "BE.WLG",
+        "country": "BEL",
+        "lang": "it"
+      }, {
+        "title": "Prova lang",
+        "link": "#",
+        "region": null,
+        "country": "AFG",
+        "lang": "it"
+      }, {
+        "title": "Notizia finta",
+        "link": "#",
+        "region": null,
+        "country": "HKG",
+        "lang": "it"
+      }, {
+        "title": "San Marino e sgravi fiscali",
+        "link": "#",
+        "region": "SM.07",
+        "country": "SMR",
+        "lang": "it"
+      }]
+    }
+  }
+}

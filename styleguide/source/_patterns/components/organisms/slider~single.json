@@ -1,0 +1,52 @@
+{"single": "1",
+  "slide": {
+    "image": {
+      "ID": 877,
+      "id": 877,
+      "title": "image",
+      "filename": "image.jpg",
+      "url": "http:\/\/localhost:8080\/images\/img_slider_header_2.jpg",
+      "alt": "",
+      "author": "1",
+      "description": "",
+      "caption": "",
+      "name": "image",
+      "date": "2018-03-26 14:59:27",
+      "modified": "2018-04-13 15:06:58",
+      "mime_type": "image\/jpeg",
+      "type": "image",
+      "icon": "http:\/\/localhost\/wp-includes\/images\/media\/default.png",
+      "width": 860,
+      "height": 572,
+      "sizes": {
+        "thumbnail": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image-150x150.jpg",
+        "thumbnail-width": 150,
+        "thumbnail-height": 150,
+        "medium": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image-300x200.jpg",
+        "medium-width": 300,
+        "medium-height": 200,
+        "medium_large": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image-768x511.jpg",
+        "medium_large-width": 768,
+        "medium_large-height": 511,
+        "large": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image.jpg",
+        "large-width": 860,
+        "large-height": 572
+      }
+    },
+    "title": "Proteggi la tua azienda",
+    "description": "<p>La sicurezza della tua famiglia \u00e8 in buone mani.<\/p>\n"
+  },
+  "strip_buttons": [{
+    "strip": {
+      "image": "http://localhost:8080/images/pencil.svg",
+      "label": "etichetta prova",
+      "link": "#"
+    }
+  }, {
+    "strip": {
+      "image": "http://localhost:8080/images/pencil.svg",
+      "label": "Scopri il team di esperti sempre al tuo fianco",
+      "link": "#"
+    }
+  }]
+}

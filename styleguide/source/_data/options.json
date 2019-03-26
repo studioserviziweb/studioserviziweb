@@ -1,0 +1,64 @@
+{
+  "options": {
+    "strip_buttons": [{
+      "strip": {
+        "image": {
+          "url": "/images/pencil.svg"
+        },
+        "type": "chiamaci",
+        "form": null,
+        "title": "Chiamaci",
+        "content": "<p>Per qualsiasi dubbio o richiesta, <strong>chiamaci al numero verde gratuito</strong></p><p><img src=\"http:\/\/staging.pleaseup.com\/sicuritalia\/wp-content\/uploads\/2018\/05\/numverde.png\" /></p><p>dal lunedì al sabato </p>"
+      }
+    }, {
+      "strip": {
+        "image": {
+          "url": "/images/pencil.svg"
+      },
+      "type": "scrivici",
+      "form": "all",
+      "title": "scrivici",
+      "content": "Varie"
+    }
+  }, {
+    "strip": {
+      "image": null,
+      "type": "numverde",
+      "form": null,
+      "title": "Numero Verde",
+      "content": "800 595 493"
+    }
+  }],
+    "socials": [{
+
+          "value": "https:\/\/www.facebook.com\/",
+          "label": "facebook",
+        "username": "asfdasfga"
+      },{
+
+          "value": "https:\/\/twitter.com\/",
+          "label": "twitter",
+        "username": "asdasdg"
+      },{
+
+          "value": "https:\/\/www.instagram.com\/",
+          "label": "instagram",
+        "username": "asgdasg"
+      },{
+
+          "value": "https:\/\/www.instagram.com\/",
+          "label": "youtube",
+        "username": "asgdasg"
+      }],
+    "credits": {
+      "description": "<p>DAMA S.p.a &#8211; Italy &#8211; Via Piemonte, 174 &#8211; 21100 Varese Share Capital \u20ac 4.100.000 Registro Imprese di Varese 01910560125 REA Varese 216056 P.IVA 01910560125 Certified e-mail: damaspa@certimprese.it<\/p>\n"
+    },
+    "api": {
+      "google" : {
+        "reCaptcha" : {
+          "sitekey" : "6LfJs1YUAAAAACTYQq4_s9aMp3dPpSVaujRmKlCR"
+        }
+      }
+    }
+  }
+}

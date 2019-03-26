@@ -1,0 +1,3 @@
+{
+  "breadcrumbs" : "<span xmlns:v=\"http:\/\/rdf.data-vocabulary.org\/#\"><span typeof=\"v:Breadcrumb\"><a href=\"http:\/\/localhost\/\" rel=\"v:url\" property=\"v:title\">Home<\/a> \/ <span rel=\"v:child\" typeof=\"v:Breadcrumb\"><a href=\"http:\/\/localhost\/aziende\/\" rel=\"v:url\" property=\"v:title\">Azienda<\/a> \/ <span rel=\"v:child\" typeof=\"v:Breadcrumb\"><a href=\"http:\/\/localhost\/aziende\/sicurezza-fisica\/\" rel=\"v:url\" property=\"v:title\">Sicurezza Fisica<\/a> \/ <span rel=\"v:child\" typeof=\"v:Breadcrumb\"><a href=\"http:\/\/localhost\/aziende\/sicurezza-fisica\/settori\/\" rel=\"v:url\" property=\"v:title\">Settori<\/a> \/ <strong class=\"breadcrumb_last\">Settore Alimentari<\/strong><\/span><\/span><\/span><\/span><\/span>"
+}

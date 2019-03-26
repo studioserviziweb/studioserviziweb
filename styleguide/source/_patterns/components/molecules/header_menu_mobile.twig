@@ -1,0 +1,12 @@
+<nav id="header-menu-mobile" class="header-menu-mobile collapsed">
+	{% include 'components/atoms/menu.twig' with {mobile: true,
+		items : menumob.items
+	}
+	only %}
+	{% include 'components/molecules/follow-us.twig' with {
+		socials: socials , mobile: true
+	} only %}
+	{% include 'components/molecules/newsletter.twig' with {
+		newsletter: newsletter, mobile: true
+	} only %}
+</nav>

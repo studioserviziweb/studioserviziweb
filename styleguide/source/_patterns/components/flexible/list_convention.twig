@@ -1,0 +1,29 @@
+{% spaceless %}
+
+{#
+  :: List Conventions ::
+
+  PARAMS:
+  ---- item:															{<string>}
+  -------- title:													{<string>}
+
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set title = contents.title %}
+{% set items = contents.item %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex-list-conventions container">
+	<div class="flex-head">
+		<h3>{{title}}</h3>
+	</div>
+	<ul>
+		{% for item in items %}
+			<li>{{item.title}}</li>
+		{% endfor %}
+	</ul>
+
+</div>

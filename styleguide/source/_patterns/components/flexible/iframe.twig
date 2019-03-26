@@ -1,0 +1,12 @@
+{% spaceless %}
+{# Variables set #}
+{% set url = contents.url|default(empty) %}
+
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-iframe container">
+	<div class="row">
+		<iframe frameborder='0' height='600px' width='100%'src='{{url}}' frameborder="0" allowfullscreen></iframe>
+	</div>
+
+</div>

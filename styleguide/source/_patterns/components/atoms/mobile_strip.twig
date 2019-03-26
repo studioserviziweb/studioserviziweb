@@ -1,0 +1,11 @@
+{% for item in strips %}
+
+{% if item.strip.type != "numverde" %}
+	{% set link = item.strip.link|default(empty) %}
+	{% set image = item.strip.image|default(empty) %}
+
+	<a href="#str_cont{{loop.index}}" class="strip-mobile">
+		{% if image is not empty %}<img src="{{image.url}}"/> {% endif %}
+	</a>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,49 @@
+{% spaceless %}
+
+{#
+  :: Why Us ::
+
+  PARAMS:
+	- carousel:    		  										{<object>}
+  ---- title:															{<string>}
+  ---- description:													{<string>}
+  -------- section:            			    	{<string>}
+  ---- items:		            			    		{<object>}
+  -------- item:													{<object>}
+  ------------ title 											{<string>}
+	------------ description								{<string>}
+
+
+
+  USAGE:
+  - include
+#}
+
+{# Variables set #}
+{% set title = contents.title %}
+{% set description = contents.description %}
+{% set item = contents.item %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-whyus container">
+	<div class="flex-head">
+		<h2>{{title}}</h2>
+		<p>{{description}}</p>
+	</div>
+<div class="flex-whyus-slider flex-whyus-slider-{{item|length}}">
+
+	{% for el in item %}
+
+		<div class="item-{{loop.index}} item">
+			{% include 'components/atoms/icon_icon.twig' with { image: el.image } only %}
+			<div class="flex-whyus-data">
+				{% include 'components/atoms/icon_h3_title.twig' with { title: el.title } only %}
+				{% include 'components/atoms/icon_subtitle.twig' with { description: el.description } only %}
+			</div>
+		</div>
+
+	{% endfor %}
+
+</div>
+
+</div>

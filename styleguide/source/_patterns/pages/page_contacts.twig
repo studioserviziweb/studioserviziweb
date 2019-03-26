@@ -1,0 +1,70 @@
+{% extends "base.twig" %}
+
+{% block contentTop %}
+	{% include 'components/organisms/slider.twig' with { slider: slider, single: true } only %}
+{% endblock %}
+
+{% block content %}
+{% set greenImg = options.green_phone %}
+{% set greenNumb = options.phone %}
+<div class="strip_text_title strip_list">
+  <div class="content">
+
+    SCRIVICI: <b>Scegli la tua area di interesse:</b>
+    <ul>
+      <li>
+        <a href="#ofseprb">Offerta e servizi per <strong>Privati</strong></a>
+      </li>
+      <li>
+        <a href="#ofsenub">Offerta e servizi per <strong>Negozi e uffici</strong></a>
+      </li>
+      <li>
+        <a href="#ofseazb">Offerta e servizi per <strong>Aziende</strong></a>
+      </li>
+      <li>
+        <a href="#ofsepab">Offerta e servizi per <strong>Pubblica Amministrazione</strong></a>
+      </li>
+      <li>
+        <a href="#riclavb"> <strong>Richieste di Lavoro</strong></a>
+      </li>
+      <li>
+        <a href="#uffstab"> <strong>Ufficio Stampa</strong></a>
+      </li>
+      <li>
+        <a href="#varieb"> <strong>Varie</strong></a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="strip_panel" id="ofseprb">
+  {% include 'components/molecules/strip_form.twig' with {external: '2', title: "Offerta e servizi per <b>Privati</b>",typeForm: "privati",api:api, inBody: true, greenImg: greenImg.home, greenNumb: greenNumb.home } only %}
+</div>
+<div class="strip_panel" id="ofsenub">
+  {% include 'components/molecules/strip_form.twig' with {external: '2', title: "Offerta e servizi per <b>Negozi e Uffici</b>",typeForm: "negozi_e_uffici",api:api, inBody: true, greenImg: greenImg.office, greenNumb: greenNumb.office } %}
+</div>
+<div class="strip_panel" id="ofseazb">
+  {% include 'components/molecules/strip_form.twig' with {external: '2', title: "Offerta e servizi per <b>Aziende</b>",typeForm: "aziende",api:api, inBody: true, greenImg: greenImg.agency_ov_100, greenNumb: greenNumb.agency_ov_100 } %}
+</div>
+<div class="strip_panel" id="ofsepab">
+  {% include 'components/molecules/strip_form.twig' with {external: '2', title: "Offerta e servizi per <b>Pubblica Amministrazione</b>",typeForm: "pubblica_amministrazione",api:api, inBody: true, greenImg: greenImg.pa, greenNumb: greenNumb.pa } %}
+</div>
+
+<div class="strip_panel" id="riclavb">
+
+  {% set contentt = "<strong>Puoi visitare il nostro portale Lavora con Noi</strong> per consultare le posizioni disponibili a inviare la tua candidatura.<a href=\"/portale\" class=\"button\" >VAIL AL PORTALE</A>" %}
+
+  {% include 'components/atoms/strip_text_title.twig' with {title: "Richiesta di lavoro",class:" red-title",content: contentt,back:true} %}
+</div>
+<div class="strip_panel" id="uffstab">
+
+  {% set contentt = "Per Media e PR puoi contattare il nostro Ufficio Stampa InConTra <a class=\"mailink\" href=\"mailto:\">a questo indirizzo email</a><br><small>oppure</small> <br> al numero di telefono  <a class=\"tel-grande\" href=\"tel:06 4740739\">06 4740739</a>" %}
+
+  {% include 'components/atoms/strip_text_title.twig' with {title: "Ufficio stampa",class:" red-title",content: contentt,back:true} %}
+</div>
+
+<div class="strip_panel" id="varieb">
+  {% include 'components/molecules/strip_form.twig' with {external: '2', title: "Varie",typeForm: "varie",api:api, inBody: true, greenImg: greenImg.default, greenNumb: greenNumb.default } %}
+</div>
+{% endblock %}

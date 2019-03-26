@@ -1,0 +1,25 @@
+<div class="header-middle-bar">
+	<div class="container-menu">
+		<div class="header-logo">
+			{% include 'components/atoms/logo.twig' with { url : header.logo.url, image : header.logo.image } only %}
+		</div>
+		<div class="header-strips-mobile">
+			{% include 'components/atoms/mobile_strip.twig' with { strips: strips } only %}
+		</div>
+
+		<div class="header-search">
+			{% include 'components/atoms/top_bar_search.twig'%}
+		</div>
+
+		<nav class="header-menu-middle">
+			{% include 'components/atoms/menu.twig' with {items : header.menutopserv.items} only %}
+		</nav>
+
+		<div class="header-menu-collapsed">
+			<i id="icon-menu" class="icon-menu"></i>
+		</div>
+	</div>
+	{% include 'components/molecules/header_menu_mobile.twig' with {
+		menumob : header.menumob, socials: header.socials, newsletter:header.newsletter
+	} only  %}
+</div>

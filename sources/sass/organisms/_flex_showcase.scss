@@ -1,0 +1,114 @@
+.flex {
+	&-showcase {
+		&-container {
+			position: relative;
+
+			.mob-img {
+				width: 100%;
+				height: auto;
+			}
+
+			.container {
+
+				@include bp($tb) {
+					max-width: 100%;
+					padding: 0;
+				}
+
+				@include bp($dk) {
+					max-width: 960px;
+				}
+
+				@include bp($hd-dk) {
+					max-width: 1140px;
+				}
+			}
+
+			h3 {
+				font-size: 2rem;
+				font-weight: $font-weight-bold;
+				width: 100%;
+			}
+
+			h4 {
+				font-size: (22 / 16) * 1rem;
+				font-weight: $font-weight-light;
+				width: 100%;
+			}
+
+		}
+
+		&-content {
+			padding: 50px;
+
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+
+			@include bp($dk) {
+				display: block;
+			}
+
+			&::after {
+				$size: 4rem;
+				content: '';
+				position: absolute;
+				top: -$size / 2;
+				right: -$size / 2;
+				width: $size;
+				height: $size * 2;
+				border-top-right-radius: $size * 2;
+				border-bottom-right-radius: $size * 2;
+				background-color: rgba($blue, .7);
+				display: none;
+
+				@include bp($dk) {
+					display: block;
+				}
+				@include bp($hd-dk) {
+					right: -$size;
+
+				}
+
+			}
+		}
+
+		&-bg {
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: contain;
+	    padding-top: 0;
+	    padding-bottom: 0;
+			position: absolute;
+			width: 0;
+			top: 0;
+			bottom: 0;
+			left: 0;
+
+			@include bp($hd-dk) {
+				width: 500px;
+				left: 2vw;
+				max-height: auto;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			@include bp(1280px) {
+				left: 5vw;
+			}
+
+			@include bp(1400px) {
+				left: 10vw;
+			}
+
+			@include bp(1600px) {
+				left: 15vw;
+			}
+
+			@include bp(1800px) {
+				left: 20vw;
+			}
+		}
+	}
+}

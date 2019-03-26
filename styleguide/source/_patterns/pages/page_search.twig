@@ -1,0 +1,85 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="search-page">
+		{% include 'components/organisms/header_single.twig' with {
+			image : headImage,
+			title: 'Risultati di ricerca per : ' ~ headTitle,
+			search: true
+		}
+		only %}
+		<div class="container single-container">
+			<div class="row">
+
+				<div class="col-md-8">
+
+					{% for post in posts %}
+						<div class="search-article">
+							<div class="search-img">
+								<a href="{{ post.link }}" style="background-image: url('{{post.thumbnail.src}}')"></a>
+							</div>
+							<div class="search-post">
+								<a href="{{ post.link }}">
+									<h4>{{post.title}}</h4>
+								</a>
+								{{ post.get_preview(20, true,'Scopri &gt;',true) }}
+							</div>
+						</div>
+					{% endfor %}
+
+					{% include 'components/molecules/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+
+				</div>
+
+				<aside class="col-md-4 sidebar">
+					<form role="search" method="get" action="{{ site.link }}" class="side-search">
+						<div>
+							<ul>
+								<h6>Ricerca</h6>
+								<li><input type="text" name="s" placeholder="Quale soluzione stai cercando?" value="{{fn('the_search_query')}}"></li>
+								<h6>Categoria</h6>
+								<li>
+									<select name="category_name">
+										<option value="">Tutte le categorie</option>
+										{% for cat in term.cat %}
+											<option value="{{cat.slug}}">{{cat.name}}</option>
+										{% endfor %}
+									</select>
+								</li>
+								<h6>Tags</h6>
+								<li>
+									<select name="tag">
+										<option value="0">Tutti i tag</option>
+										{% for tag in term.tag %}
+											<option value="{{tag.slug}}">{{tag.name}}</option>
+										{% endfor %}
+									</select>
+									</li>
+									<h6>Tipo di contenuto</h6>
+								<li>
+									<select name="post_type">
+										<option value="">Tutti i tipi di post</option>
+										<option value="post">Articoli</option>
+										<option value="page">Pagine</option>
+										<option value="home">Casa</option>
+										<option value="office">Business</option>
+										<option value="agency">Azienda</option>
+										<option value="pa">Pubblica Amministrazione</option>
+									</select>
+								</li>
+								<li>
+										<input type="submit" value="Cerca">
+									</li>
+								</ul>
+							</div>
+						</form>
+
+					</aside>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	{% endblock %}

@@ -1,0 +1,290 @@
+{
+  "flexibleContent": [{
+    "layout": "title_desc",
+    "contents": {
+      "title": "Il nostro servizio",
+      "description": "<h2>STANDARD<\/h2>\n<p>Attivit\u00e0 di vigilanza per prevenire ingressi abusivi e attacchi ai beni del cliente. Pu\u00f2 essere svolta in modo statico in prossimit\u00e0 degli ingressi per controllare gli accessi o in modo dinamico all\u2019interno degli spazi vigilati. Pu\u00f2 prevedere l\u2019accoglienza e la registrazione delle persone che accedono all\u2019interno di un immobile, generalmente sede di uffici o di stabilimenti, e comprendere l\u2019adempimento delle procedure di accesso (es: la raccolta dei documenti di riconoscimento, modulo privacy, ecc.). Il personale addetto allo svolgimento di tale prestazione \u00e8 di tipo Standard con formazione e dotazioni Standard. \u0003\u0003<\/p>\n<h2>SUPERIOR<\/h2>\n<p>\u0003Attivit\u00e0 di vigilanza svolta presso una postazione particolarmente sensibile (per il prestigio o per la rilevanza attribuita dal cliente). Si diversifica rispetto al Presidio Standard in quanto il personale addetto alla vigilanza ha sempre un\u2019esperienza pregressa, parla italiano senza inflessioni dialettali, indossa una divisa superior, \u00e8 di bella presenza e possiede una conoscenza base dell\u2019inglese e degli strumenti informatici necessari al compito, con specifica formazione su antincendio base e primo soccorso. Il personale \u00e8 monitorato con frequenza doppia rispetto allo Standard. Alcuni dei servizi che la GPG svolge all\u2019ingresso di un immobile uso uffici nell\u2019orario sono:<\/p>\n"
+    }
+  }, {
+    "layout": "showcase",
+    "contents": {
+      "title": "Le nostre storie",
+      "subtitle": "",
+      "story_title": "Carrefour Italia srl",
+      "story_subtitle": "Gruppo del settore GDO",
+      "cta": {
+        "title": "GUARDA IL VIDEO",
+        "url": "#",
+        "target": ""
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\nconsectetuer adipiscing elit. Aenean commodo ligula eget \r\ndolor.Aenean commodo ligula eget dolor.\r\n\r\nLorem ipsum dolor sit amet, consectetuer \r\nadipiscing elit. consectetuer adipiscing elit.",
+      "image": {
+        "ID": 877,
+        "id": 877,
+        "title": "image",
+        "filename": "image.jpg",
+        "filesize": 20906,
+        "url": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image.jpg",
+        "link": "http:\/\/localhost\/per-le-aziende\/image\/",
+        "alt": "",
+        "author": "1",
+        "description": "",
+        "caption": "",
+        "name": "image",
+        "status": "inherit",
+        "uploaded_to": 824,
+        "date": "2018-03-26 14:59:27",
+        "modified": "2018-04-18 13:36:35",
+        "menu_order": 0,
+        "mime_type": "image\/jpeg",
+        "type": "image",
+        "subtype": "jpeg",
+        "icon": "http:\/\/localhost\/wp-includes\/images\/media\/default.png",
+        "width": 860,
+        "height": 572,
+        "sizes": {
+          "thumbnail": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image-150x150.jpg",
+          "thumbnail-width": 150,
+          "thumbnail-height": 150,
+          "medium": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image-300x200.jpg",
+          "medium-width": 300,
+          "medium-height": 200,
+          "medium_large": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image-768x511.jpg",
+          "medium_large-width": 768,
+          "medium_large-height": 511,
+          "large": "http:\/\/localhost\/wp-content\/uploads\/2018\/03\/image.jpg",
+          "large-width": 860,
+          "large-height": 572
+        }
+      },
+      "image_mobile": false
+    }
+  }, {
+    "layout": "whyus",
+    "contents": {
+      "title": "Perch\u00e9 scegliere Sicuritalia",
+      "description": "Sicuritalia \u00e8 in grado di fornire servizi di presidio armato su tutto il territorio nazionale, garantendo ovunque un identico processo di selezione, formazione, gestione e controllo, grazie all'attivit\u00e0 delle sue sedi territoriali e della sua struttura di coordinamento nazionale. \r\n\r\nLa cultura del servizio della nostra azienda e il grande numero dei nostri dipendenti, ci consente di poter gestire tempestivamente ogni esigenza imprevista del Cliente. \r\n\r\nLe piattaforme di governo web based, unitamente agli strumenti di verifica in real time delle prese di servizio, ci consentono di certificare sempre la presenza delle GPG presso i siti del Cliente, dandone visibilit\u00e0 anche al Cliente stesso in tempo reale.\r\n",
+      "item": [{
+        "title": "SELEZIONE E FORMAZIONE",
+        "description": "Operiamo con 40 persone tra selezionatori e formatori per trovare la persona giusta per il posto giusto.",
+        "image": {
+          "ID": 960,
+          "id": 960,
+          "title": "212x130",
+          "filename": "212x130.png",
+          "filesize": 530,
+          "url": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+          "link": "http:\/\/localhost\/home\/212x130\/",
+          "alt": "",
+          "author": "1",
+          "description": "",
+          "caption": "",
+          "name": "212x130",
+          "status": "inherit",
+          "uploaded_to": 947,
+          "date": "2018-04-06 17:40:25",
+          "modified": "2018-04-18 12:14:15",
+          "menu_order": 0,
+          "mime_type": "image\/png",
+          "type": "image",
+          "subtype": "png",
+          "icon": "http:\/\/localhost\/wp-includes\/images\/media\/default.png",
+          "width": 212,
+          "height": 130,
+          "sizes": {
+            "thumbnail": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130-150x130.png",
+            "thumbnail-width": 150,
+            "thumbnail-height": 130,
+            "medium": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "medium-width": 212,
+            "medium-height": 130,
+            "medium_large": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "medium_large-width": 212,
+            "medium_large-height": 130,
+            "large": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "large-width": 212,
+            "large-height": 130
+          }
+        }
+      }, {
+        "title": "COORDINAMENTO E CONTROLLO",
+        "description": "Governiamo il servizio di presidio con oltre 120 coordinatori distribuiti su tutto il territorio nazionale.",
+        "image": {
+          "ID": 960,
+          "id": 960,
+          "title": "212x130",
+          "filename": "212x130.png",
+          "filesize": 530,
+          "url": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+          "link": "http:\/\/localhost\/home\/212x130\/",
+          "alt": "",
+          "author": "1",
+          "description": "",
+          "caption": "",
+          "name": "212x130",
+          "status": "inherit",
+          "uploaded_to": 947,
+          "date": "2018-04-06 17:40:25",
+          "modified": "2018-04-18 12:14:15",
+          "menu_order": 0,
+          "mime_type": "image\/png",
+          "type": "image",
+          "subtype": "png",
+          "icon": "http:\/\/localhost\/wp-includes\/images\/media\/default.png",
+          "width": 212,
+          "height": 130,
+          "sizes": {
+            "thumbnail": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130-150x130.png",
+            "thumbnail-width": 150,
+            "thumbnail-height": 130,
+            "medium": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "medium-width": 212,
+            "medium-height": 130,
+            "medium_large": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "medium_large-width": 212,
+            "medium_large-height": 130,
+            "large": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "large-width": 212,
+            "large-height": 130
+          }
+        }
+      }, {
+        "title": "SERVIZIO CUSTOMIZZATO",
+        "description": "Ogni servizio viene modellato sulle esigenze del Cliente e della specifica postazione.",
+        "image": {
+          "ID": 960,
+          "id": 960,
+          "title": "212x130",
+          "filename": "212x130.png",
+          "filesize": 530,
+          "url": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+          "link": "http:\/\/localhost\/home\/212x130\/",
+          "alt": "",
+          "author": "1",
+          "description": "",
+          "caption": "",
+          "name": "212x130",
+          "status": "inherit",
+          "uploaded_to": 947,
+          "date": "2018-04-06 17:40:25",
+          "modified": "2018-04-18 12:14:15",
+          "menu_order": 0,
+          "mime_type": "image\/png",
+          "type": "image",
+          "subtype": "png",
+          "icon": "http:\/\/localhost\/wp-includes\/images\/media\/default.png",
+          "width": 212,
+          "height": 130,
+          "sizes": {
+            "thumbnail": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130-150x130.png",
+            "thumbnail-width": 150,
+            "thumbnail-height": 130,
+            "medium": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "medium-width": 212,
+            "medium-height": 130,
+            "medium_large": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "medium_large-width": 212,
+            "medium_large-height": 130,
+            "large": "http:\/\/localhost\/wp-content\/uploads\/2018\/04\/212x130.png",
+            "large-width": 212,
+            "large-height": 130
+          }
+        }
+      }]
+    }
+  }, {
+    "layout": "integrate_service",
+    "contents": {
+      "item": [{
+        "cta": {
+          "title": "SERVIZIO 1",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SERVIZIO 2",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SERVIZIO 3",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SERVIZIO 4",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SERVIZIO 5",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SERVIZIO 6",
+          "url": "#",
+          "target": ""
+        }
+      }]
+    }
+  }, {
+    "layout": "applicate_sector",
+    "contents": {
+      "item": [{
+        "cta": {
+          "title": "SETTORE 1",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SETTORE 2",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SETTORE 3",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SETTORE 4",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "SETTORE 5",
+          "url": "#",
+          "target": ""
+        }
+      }, {
+        "cta": {
+          "title": "TUTTI I SETTORI",
+          "url": "#",
+          "target": ""
+        }
+      }]
+    }
+  }, {
+    "layout": "callus",
+    "contents": {
+      "callcenter": "800.000.003",
+      "title": "Chiamaci al",
+      "subtitle": "Oppure inserisci il tuo numero di telefono",
+      "cta": {
+        "title": "TI RICHIAMIAMO NOI",
+        "url": "#",
+        "target": ""
+      }
+    }
+  }]
+}

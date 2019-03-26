@@ -1,0 +1,45 @@
+{
+  "contents": {
+    "title": "Le nostre sedi in",
+    "regions": [{
+      "label": "Lombardia",
+      "provinces": [{
+        "title": "Milano",
+        "link": "#"
+      }, {
+        "title": "Bergamo",
+        "link": "#"
+      }, {
+        "title": "Brescia",
+        "link": "#"
+      }, {
+        "title": "Como",
+        "link": "#"
+      }, {
+        "title": "Cremona",
+        "link": "#"
+      }]
+    }, {
+      "label": "Emilia Romagna",
+      "provinces": [{
+        "title": "Bologna",
+        "link": "#"
+      }, {
+        "title": "Modena",
+        "link": "#"
+      }, {
+        "title": "Parma",
+        "link": "#"
+      }]
+    }, {
+      "label": "Toscana",
+      "provinces": false
+    }, {
+      "label": "Lazio",
+      "provinces": false
+    }, {
+      "label": "Marche",
+      "provinces": false
+    }]
+  }
+}

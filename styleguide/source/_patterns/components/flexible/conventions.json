@@ -1,0 +1,138 @@
+{
+  "contents": {
+            "title": "LE CONVENZIONI ATTIVE",
+            "image": {
+                "ID": 1410,
+                "id": 1410,
+                "title": "numero_verde_pa",
+                "filename": "numero_verde_pa.png",
+                "filesize": 3632,
+                "url": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/numero_verde_pa.png",
+                "link": "http:\/\/www.sicuritalia.local\/numero_verde_pa\/",
+                "alt": "",
+                "author": "1",
+                "description": "",
+                "caption": "",
+                "name": "numero_verde_pa",
+                "status": "inherit",
+                "uploaded_to": 0,
+                "date": "2018-04-25 20:56:11",
+                "modified": "2018-04-25 20:56:11",
+                "menu_order": 0,
+                "mime_type": "image\/png",
+                "type": "image",
+                "subtype": "png",
+                "icon": "http:\/\/www.sicuritalia.local\/wp-includes\/images\/media\/default.png",
+                "width": 126,
+                "height": 45,
+                "sizes": {
+                    "thumbnail": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/numero_verde_pa.png",
+                    "thumbnail-width": 126,
+                    "thumbnail-height": 45,
+                    "medium": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/numero_verde_pa.png",
+                    "medium-width": 126,
+                    "medium-height": 45,
+                    "medium_large": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/numero_verde_pa.png",
+                    "medium_large-width": 126,
+                    "medium_large-height": 45,
+                    "large": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/numero_verde_pa.png",
+                    "large-width": 126,
+                    "large-height": 45
+                }
+            },
+            "items": [
+                {
+                    "title": "Convenzione Arca",
+                    "description": "<p>ARCA Lombardia ha aggiudicato la prima Convenzione Regionale, suddivisa in 12 lotti provinciali per i servizi di Vigilanza Armata e la prima Convenzione Regionale per i servizi di Portierato suddivisa in 2 lotti. In data 4\/12\/2017 sono state attivate le convenzioni e sono quindi disponibili per tutti gli enti aderenti. L\u2019ATI di cui Sicuritalia \u00e8 capogruppo, \u00e8 risultata aggiudicataria dei lotti afferenti le province di Milano, Varese, Brescia, Lecco e Como della convenzione vigilanza, ed entrambi i lotti geografici della convenzione portierato. L\u2019adesione alla convenzione ARCA \u00e8 riservata agli Enti regionali e agli Enti del Servizio Sanitario elencati nella Legge Regionale della Lombardia n. 30 del 2006 e allegati relativi.<\/p>\n",
+                    "services": [
+                        {
+                            "image": {
+                                "ID": 1412,
+                                "id": 1412,
+                                "title": "arca_vigilanza",
+                                "filename": "arca_vigilanza.png",
+                                "filesize": 257323,
+                                "url": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_vigilanza.png",
+                                "link": "http:\/\/www.sicuritalia.local\/arca_vigilanza\/",
+                                "alt": "",
+                                "author": "1",
+                                "description": "",
+                                "caption": "",
+                                "name": "arca_vigilanza",
+                                "status": "inherit",
+                                "uploaded_to": 0,
+                                "date": "2018-04-25 21:08:01",
+                                "modified": "2018-04-25 21:33:31",
+                                "menu_order": 0,
+                                "mime_type": "image\/png",
+                                "type": "image",
+                                "subtype": "png",
+                                "icon": "http:\/\/www.sicuritalia.local\/wp-includes\/images\/media\/default.png",
+                                "width": 583,
+                                "height": 264,
+                                "sizes": {
+                                    "thumbnail": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_vigilanza-150x150.png",
+                                    "thumbnail-width": 150,
+                                    "thumbnail-height": 150,
+                                    "medium": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_vigilanza-300x136.png",
+                                    "medium-width": 300,
+                                    "medium-height": 136,
+                                    "medium_large": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_vigilanza.png",
+                                    "medium_large-width": 583,
+                                    "medium_large-height": 264,
+                                    "large": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_vigilanza.png",
+                                    "large-width": 583,
+                                    "large-height": 264
+                                }
+                            },
+                            "title": "Arca Vigilanza",
+                            "link": ""
+                        },
+                        {
+                            "image": {
+                                "ID": 1411,
+                                "id": 1411,
+                                "title": "arca_portierato",
+                                "filename": "arca_portierato.png",
+                                "filesize": 291038,
+                                "url": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_portierato.png",
+                                "link": "http:\/\/www.sicuritalia.local\/arca_portierato\/",
+                                "alt": "",
+                                "author": "1",
+                                "description": "",
+                                "caption": "",
+                                "name": "arca_portierato",
+                                "status": "inherit",
+                                "uploaded_to": 0,
+                                "date": "2018-04-25 21:07:57",
+                                "modified": "2018-04-25 21:34:01",
+                                "menu_order": 0,
+                                "mime_type": "image\/png",
+                                "type": "image",
+                                "subtype": "png",
+                                "icon": "http:\/\/www.sicuritalia.local\/wp-includes\/images\/media\/default.png",
+                                "width": 583,
+                                "height": 264,
+                                "sizes": {
+                                    "thumbnail": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_portierato-150x150.png",
+                                    "thumbnail-width": 150,
+                                    "thumbnail-height": 150,
+                                    "medium": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_portierato-300x136.png",
+                                    "medium-width": 300,
+                                    "medium-height": 136,
+                                    "medium_large": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_portierato.png",
+                                    "medium_large-width": 583,
+                                    "medium_large-height": 264,
+                                    "large": "http:\/\/www.sicuritalia.local\/wp-content\/uploads\/2018\/04\/arca_portierato.png",
+                                    "large-width": 583,
+                                    "large-height": 264
+                                }
+                            },
+                            "title": "Arca Portierato",
+                            "link": ""
+                        }
+                    ]
+                }
+            ]
+        }
+      }
