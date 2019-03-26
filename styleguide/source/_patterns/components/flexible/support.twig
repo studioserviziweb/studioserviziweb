@@ -1,0 +1,122 @@
+{% spaceless %}
+
+{#
+  :: Title and Description ::
+
+  PARAMS:
+	- solutions:    		  									{<object>}
+  ---- title:															{<string>}
+  ---- description:												{<string>}
+  ---- image:															{<string>}
+	-------- url:														{<string>}
+	-------- alt:														{<string>}
+	-------- width:		 											{<string>}
+	-------- height:	 											{<string>}
+	-------- sizes:													{<string>}
+	------------ thumbnail: 	   						{<string>}
+	------------ thumbnail-width: 					{<string>}
+	------------ thumbnail-height: 					{<string>}
+	------------ medium: 										{<string>}
+	------------ medium-width:							{<string>}
+	------------ medium-height: 						{<string>}
+	------------ medium_large: 							{<string>}
+	------------ medium_large-width: 				{<string>}
+	------------ medium_large-height: 			{<string>}
+	------------ large: 										{<string>}
+	------------ large-width: 							{<string>}
+	------------ large-height: 							{<string>}
+  ---- cta:																{<string>}
+  -------- link:												  {<string>}
+  -------- title:												  {<string>}
+
+
+
+
+  USAGE:
+  - include
+#}
+
+{# Variables set #}
+{% set support = contents %}
+{% set description = support.description %}
+{% set cta_call = support.cta_call %}
+{% set cta_contact = support.cta_contact %}
+{% set api = support.api %}
+{% set greenImg = greenImg.office %}
+{% set greenNumb = greenNumb.office %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-support" >
+	<div class="flex-support-bg">
+		<div class="container">
+			<div class="flex-support-content">
+				<div class="row align-items-center">
+					<div class="text col-sx-12 col-md-12">
+						{{ description|raw }}</h3>
+					</div>
+					<div class="btn-call col-sx-12 col-md-6">
+						{% include 'components/atoms/cta.twig' with { link: cta_call.url, label: cta_call.title } only %}
+					</div>
+					<div class="btn-contact col-sx-12 col-md-6">
+						{% include 'components/atoms/cta.twig' with { link: cta_contact.url, label: cta_contact.title } only %}
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="callnow col-sm-12 col-md-12">
+						<h2>Chiamaci</h2>
+						<a href="tel:{{greenNumb}}"><img src="{{greenImg.url}}"/></a>
+						<p>Dal lunedi al sabato dalle ore 9.00 alle ore 18.00</p>
+						<h5>Oppure fatti richiamare</h5>
+						<form id="quote_call_form2" action="" method="">
+							<input type="hidden" name="datarichiesta" value="{{ "now"|date("m/d/Y") }}">
+							<input type="hidden" name="canale" value="">
+							<input type="text" name="telcli" value="" required="required" placeholder="Telefono*">
+	          <div class="label">A che ora desideri essere richiamato</div>
+	          <div class="field-data">
+							<ul>
+								<li>
+									<input type="radio" id="appena" value="appena" name="orachiamata">
+									<label for="appena">Appena Possibile</label>
+									<div class="check"></div>
+								</li>
+								<li>
+									<input type="radio" id="9_12" value="9_12" name="orachiamata">
+									<label for="9_12">9.00 - 12.00</label>
+									<div class="check"></div>
+								</li>
+								<li>
+									<input type="radio" id="12_14" value="12_14" name="orachiamata">
+									<label for="12_14">12.00 - 14.00</label>
+									<div class="check"></div>
+								</li>
+								<li>
+									<input type="radio" id="14_18" value="14_18" name="orachiamata">
+									<label for="14_18">14.00 - 18.00</label>
+									<div class="check"></div>
+								</li>
+								<li>
+									<input type="radio" id="18_21" value="18_21" name="orachiamata">
+									<label for="18_21">18.00 - 21.00</label>
+									<div class="check"></div>
+								</li>
+							</ul>
+	         </div>
+					 <div class="send">
+							 <div class="privacy">
+								 Premendo il pulsante accetti la
+								 <a href="#">politica di privacy</a>
+							 </div>
+							 <button type="submit" name="button" class="btn">invia</button>
+					 </div>
+					 <div class="spinner hidden"></div>
+					 <div class="message hidden"></div>
+				 </form>
+					</div>
+					<div class="contactnow col-sx-12 col-md-12">
+						{% include 'components/molecules/strip_form.twig' with {title: "Compila il seguente form",typeForm: "negozi_e_uffici",api:api, external: "2"} %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

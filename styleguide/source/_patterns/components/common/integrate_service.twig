@@ -1,0 +1,29 @@
+{% spaceless %}
+
+{#
+  :: Integrate Service ::
+
+  PARAMS:
+  ---- title:            			    						{<object>}
+  ---- items:            			    						{<object>}
+  -------- cta:	            			    				{<object>}
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set service = contents %}
+{% set items = service.item %}
+
+{# Layout #}
+{% endspaceless %}<div class="integrate_service">
+<h3>{{service.title}}</h3>
+{% if items|length > 0 %}
+	<ul>
+	{% for item in items %}
+		{% set cta = item.cta %}
+		<li>{% include 'components/atoms/link_list.twig' with { link: cta.url, label: cta.title } only %}</li>
+	{% endfor %}
+	</ul>
+{% endif %}
+</div>

@@ -1,0 +1,65 @@
+{% if items %}
+
+	{% if lv1Child %}
+
+		{% set counter = items|length %}
+		{% for item in items %}
+		    {% set counter = counter + item.children|length  %}
+		{% endfor %}
+
+		{% set ulCol = "1" %}
+
+		{% if counter > 15 %}
+			{% set ulCol = "2" %}
+		{% endif %}
+		{% if counter > 30 %}
+			{% set ulCol = "3" %}
+		{% endif %}
+		{% if counter > 45 %}
+			{% set ulCol = "4" %}
+		{% endif %}
+
+	{% endif %}
+
+	<ul class="{% if lv1Child %}ulcol-{{ulCol}} {{counter}}{% endif %}">
+		{% for item in items %}
+			<li class="{{ item.classes | join(' ') }}">
+				<a target="{{ item.target }}" href="{{ item.url }}">{% if item.classes[0] != 'menu-home' %}{{item.name}}{% else %}<img src="{{site.theme.uri}}/assets/images/home.svg" />{% endif %}{% if 'menu-lv1' in item.classes %}
+					<p>{{ item.description }}</p>
+				{% endif %}
+				{% if item.tooltip %}
+					<div class="tooltip">
+							{{item.tooltip|raw}}
+					</div>
+				{% endif %}
+				</a>
+				{% if mobile == true %}
+					{% set menuBlocks = item.children %}
+
+					{% if loop.index == 1 %}
+						<div class="header-menu-mobile-brcr">
+							<span ref="home">Home</span>
+						</div>
+					{% endif %}
+
+					{% for menuBlock in menuBlocks %}
+					    <ul id="{{menuBlock.id}}" class="header-menu-mobile-ul{% if menuBlock.id == 'home' %} active{% endif %}">
+								{% for el in menuBlock.items %}
+									<li class="header-menu-mobile-li{% if el.url %} linked{% endif %}" ref="{{el.ref}}">{% if el.url %}<a href="{{el.url}}">{{el.name}}</a>{% else %}{{el.name}}{% endif %}</li>
+								{% endfor %}
+					    </ul>
+					{% endfor %}
+
+				{% elseif item.children is defined and item.children | length > 0 %}
+					{% if 'menu-lv1' in item.classes %}
+						{% set lv1Child = true %}
+					{% endif %}
+					{% include "components/atoms/menu.twig" with {
+						items : item.children, lv1Child: lv1Child
+					}
+					only %}
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+{% endif %}

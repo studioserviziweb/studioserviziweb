@@ -1,0 +1,25 @@
+{% spaceless %}
+
+{#
+  :: CONFIGURATOR QUESTIONS GROUP ::
+
+  PARAMS:
+  ---- title:															{<string>}
+  ---- subtitle:													{<string>}
+
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set title = group.title|default(empty) %}
+{% set questions = group.questions|default({}) %}
+
+{# Layout #}
+{% endspaceless %}<div class="configurator--question-group{% if loop.index == 1 %} on{% endif %}">
+  <div class="configurator--questions" id="{{fn('sanitize_title', title)}}">
+  {% for question in questions %}
+    {% include 'components/atoms/question_' ~ question.type ~ '.twig' with {question: question, loop:loop, field: 'answer_'~loop.index} only %}
+  {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.single {
+	&-header {
+		margin: 0 -15px 2rem;
+		padding: (65 / 16) * 1rem (80 / 16) * 1rem;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba($blue, .7);
+
+		}
+
+		&-title {
+			@extend h1.slider-title;
+			z-index: 1;
+			margin-left: -2rem;
+		}
+
+		&-subtitle {
+			font-size: (28 / 16) * 1rem;
+			font-weight: $font-weight-light;
+			color: $white;
+			position: relative;
+		}
+	}
+
+
+}

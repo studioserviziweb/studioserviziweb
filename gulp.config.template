@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "siteUrl":
+  {
+	  "staging": "[STAGING-URL]",
+    "production": ""
+  },
+  "patternSrc": "styleguide/source",
+  "patternPublicSrc": "styleguide/public",
+  "rootSrc": "sources",
+  "useDeporder": true,
+  "copyDest": "webroot/wp-content/themes/[THEME-FOLDER-NAME]",
+  "watchFileForReload": ["webroot/wp-content/themes/[THEME-FOLDER-NAME]/assets/js/**/*.js"],
+  "proxyUrl": "http://localhost",
+  "exposeJQuery": true,
+  "webpackResolveOverride": {},
+  "modernizrTests": []
+}

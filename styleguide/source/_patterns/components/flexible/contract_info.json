@@ -1,0 +1,13 @@
+{
+  "layout": "applications",
+  "contents": {
+    "title": "Informazioni contrattuali",
+    "item": [{
+      "title": "Vigilanza e Servizi"
+    }, {
+      "title": "Trasporto e trattamento valori"
+    }, {
+      "title": "Impianti di sicurezza"
+    }]
+  }
+}

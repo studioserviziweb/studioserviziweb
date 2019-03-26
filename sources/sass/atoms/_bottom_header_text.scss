@@ -1,0 +1,9 @@
+.slider {
+	&-nav {
+		&-text {
+			@extend .slider-nav-title;
+			font-weight: $font-weight-light;
+			text-transform: none;
+		}
+	}
+}

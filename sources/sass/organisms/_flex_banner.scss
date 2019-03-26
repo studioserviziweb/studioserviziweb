@@ -1,0 +1,26 @@
+.flex
+{
+	&-banner
+	{
+		text-align: left;
+
+		.flex-head
+		{
+			h2
+			{
+				color: $blue;
+				text-transform: uppercase;
+	    	font-weight: 700;
+				text-align: left;
+	     	margin-bottom: 0;
+			}
+
+			h3
+			{
+				color: $black;
+				font-weight: 300;
+	    	font-size: 28px;
+			}
+		}
+	}
+}

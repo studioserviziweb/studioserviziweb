@@ -1,0 +1,30 @@
+{% spaceless %}
+
+{#
+  :: contract info ::
+
+  PARAMS:
+  ---- title:															{<string>}
+  ---- item:													{<object>}
+	-------- title:															{<string>}
+
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set title = contents.title|default(empty) %}
+{% set item = contents.items|default(empty) %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-contract_info container">
+	<div class="flex-head">
+		<h3>{{title}}</h3>
+	</div>
+	<ul class="flex-contract_info-content">
+		{% for el in item %}
+			<li><a href="{{el.link.url}}">{{el.link.title}}</a></li>
+		{% endfor %}
+	</ul>
+
+</div>

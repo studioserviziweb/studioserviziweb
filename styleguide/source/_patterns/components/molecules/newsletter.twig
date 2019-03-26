@@ -1,0 +1,24 @@
+{% spaceless %}
+
+{#
+  :: Newsletter ::
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set description = newsletter.description %}
+{% set mobile = mobile|default(false) %}
+
+{# Layout #}
+{% endspaceless %}<div class="{% if footer %}footer-newsletter{% endif %}newsletter {% if (mobile == false) %} mobile{% endif %}">
+	{% if (mobile) %} <span>ISCRIVITI ALLA NEWSLETTER</span> {% endif %}
+	{% if (mobile == false) %} {{ description|raw }}  {% endif %}
+	<div class="newsletter-input">
+		<input type="email" name="" value="" placeholder="e-mail">
+		<button type="button" name="button">→</button>
+	</div>
+	{% if (mobile) %}
+		<p>Registrandomi dichiaro di aver letto <strong>l’informativa Privacy</strong></p>
+	{% endif %}
+</div>

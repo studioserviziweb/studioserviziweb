@@ -1,0 +1,10 @@
+<div class="{% if footer %}footer-socials{% endif %}socials">
+<span>Seguici su:</span>
+<div class="socials-items{% if (mobile) %}-mobile{% endif %}">
+  {% for social in socials %}
+
+  <a href="{{social.value}}{{social.username}}" target="_blank"><i class="icon-{{social.label}}"></i></a>
+
+  {% endfor %}
+</div>
+</div>

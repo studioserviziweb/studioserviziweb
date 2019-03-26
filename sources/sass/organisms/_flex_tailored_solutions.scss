@@ -1,0 +1,84 @@
+.flex {
+	$self: &;
+
+	&-tailored {
+
+		padding-left: 0;
+		padding-right: 0;
+
+		#{$self}-head {
+			h2 {
+				color: $blue;
+				position: relative;
+				margin-left: 15px;
+		    text-align: left;
+
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					background-color: #fed443;
+					height: 3rem;
+					width: 3rem;
+					top: -4.8px;
+					left: -1rem;
+					border-radius: 100%;
+					z-index: -1;
+				}
+			}
+		}
+
+		.tailored-slider {
+			margin-bottom: 2.5rem;
+			margin-top: 2rem;
+		}
+
+		.slick {
+			&-prev {
+				left: 0;
+			}
+
+			&-next {
+				right: 0;
+			}
+		}
+
+
+		&-item {
+			background-color: $blue;
+			padding: 0 15px;
+
+			&-img {
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 300px;
+			}
+
+			&-text {
+				color: $white;
+				padding: 2rem;
+				height: 230px;
+
+				h4 {
+					margin-bottom: 1.5rem;
+				}
+
+				p {
+					font-weight: $font-weight-lightest;
+				}
+
+				@include bp($tb) {
+					padding: 3rem 1.5rem 3rem 3rem;
+					height: auto;
+
+					h4 {
+						margin-bottom: 3rem;
+					}
+
+				}
+			}
+
+		}
+	}
+}

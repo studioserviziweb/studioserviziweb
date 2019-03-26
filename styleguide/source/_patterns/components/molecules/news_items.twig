@@ -1,0 +1,17 @@
+{% spaceless %}
+
+{#
+  :: NEWS FEED AGGREGATOR ::
+
+  PARAMS:
+	- items:												{<object|collection>}
+	-- item:	featured or news			{<object>}
+
+  USAGE:
+  - include
+	- aggegation on ajax call
+#}
+
+{% endspaceless %}{% for item in items %}
+	{% include 'components/atoms/loop_item.twig' with { item : item } only %}
+{% endfor %}

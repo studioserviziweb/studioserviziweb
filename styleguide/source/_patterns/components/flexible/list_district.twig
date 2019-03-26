@@ -1,0 +1,39 @@
+{% spaceless %}
+{# Variables set #}
+{% set title = contents.title %}
+{% set image = contents.image.url %}
+{% set items = contents.item %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex-list-district container">
+	<div class="flex-head">
+		<h3>{{title}}</h3>
+	</div>
+
+	<div class="districts">
+	 <div class="tit-dstr">
+	 	Seleziona la provincia di tuo interesse
+	 </div>
+		<div class="img-area">
+			<img id="item-0" src="{{image}}" />
+			{% for item in items %}
+				<img id="item-{{loop.index}}" src="{{item.image.url}}" />
+			{% endfor %}
+		</div>
+		<ul class="nav">
+			{% for item in items %}
+				{% if (item.title is not empty) %}
+				<li class="nav-item" data-image="item-{{loop.index}}">{{item.title}}</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		<div class="dscr-area">
+			{% for item in items %}
+				{% if (item.title is not empty) %}
+				<div class="nav-item item-{{loop.index}}">{{item.description|raw}}</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+
+</div>

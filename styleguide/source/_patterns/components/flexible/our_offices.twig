@@ -1,0 +1,51 @@
+{% spaceless %}
+
+{#
+  :: List Conventions ::
+
+  PARAMS:
+  ---- item:															{<string>}
+  -------- title:													{<string>}
+
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set title = contents.title %}
+{% set items = contents.regions|sort %}
+{% set countRegion = items | length %}
+{% set dividerRegion = countRegion / 2|round %}
+
+
+{# Layout #}
+{% endspaceless %}<div class="flex-ouroffices container">
+<div class="flex-head">
+	<h3>{{title}}</h3>
+</div>
+<div class="flex-ouroffices-container">
+	{% for item in items|batch(dividerRegion, '')  %}
+		<div class="flex-ouroffices-content">
+			{% for el in item %}
+			{% if el is not empty %}
+			<div class="column-content">
+				<div class="region">
+					<a href="{{el.link.url}}">{{el.label}}</a>
+					<i class='icon-right-dir'></i>
+				</div>
+				<div class="content">
+					<ul>
+						{% for itm in el.provinces %}
+						<li>
+							<a href="{{itm.link}}">{{itm.title}}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+
+	{% endfor %}
+</div>

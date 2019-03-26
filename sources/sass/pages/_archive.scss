@@ -1,0 +1,16 @@
+.archive {
+	&-page {
+		margin-top: 106px;
+
+		.single {
+			&-header {
+				background-position: center;
+				margin-bottom: 4rem;
+			}
+
+			&-container {
+				margin-top: 0;
+			}
+		}
+	}
+}

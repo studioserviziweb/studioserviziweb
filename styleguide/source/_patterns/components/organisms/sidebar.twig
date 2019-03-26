@@ -1,0 +1,48 @@
+{% spaceless %}
+
+{#
+  :: SIDEBAR SINGLE ::
+
+  PARAMS:
+  - sidebar:            			    		{<object>}
+
+
+
+  USAGE:
+  - include
+#}
+
+{# Variables set #}
+{% set sidebar = sidebar|default(empty) %}
+{% set recentPosts = sideCustom.recentPosts|default(empty) %}
+{% set foreground = sideCustom.foreground|default(empty) %}
+
+{# Layout #}
+{% endspaceless %}
+
+<section id="recent-posts" class="widget widget-recent-entries">
+	<h3 class="sidebar-widget-title">Ultimi post</h3>
+	<ul>
+		{% for item in recentPosts[:3] %}
+		<li>
+			<div class="row">
+				<a class="col-md-6 widget-recent-entries-title side-dot" href="{{ item.link }}">{{item.subtitle}}</a>
+				<a class="col-md-6" href="{{ item.link }}" style="background: url('{{item.thumbnail}}') no-repeat center; background-size: cover"></a>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</section>
+
+{{ sidebar|raw }}
+
+<section id="foreground" class="widget widget-foreground">
+	<h3 class="sidebar-widget-title">In primo piano</h3>
+	<ul>
+		{% for item in foreground %}
+		<li style="background-image: url('{{item.image.url}}'); background-size: cover;">
+				<a href="{{ item.link }}">{{item.title}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</section>

@@ -1,0 +1,30 @@
+{% spaceless %}
+
+{#
+  :: Title and Description ::
+
+  PARAMS:
+	- title_desc:    		  										{<object>}
+  ---- title:															{<string>}
+  ---- description:													{<string>}
+
+
+
+
+  USAGE:
+  - include
+#}
+
+{# Variables set #}
+{% set title = contents.title|default(empty) %}
+{% set description = contents.description|default(empty) %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-title-desc container">
+	<div class="flex-head">
+		<h2>{{title}}</h2>
+	</div>
+	{% if description is not empty %}{{description|raw}}{% endif %}
+
+
+</div>

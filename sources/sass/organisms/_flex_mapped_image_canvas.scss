@@ -1,0 +1,89 @@
+.flex {
+	&-mappedcanvas {
+		min-height: 400px;
+		padding-top: 2rem;
+
+		.flex-head {
+			position: relative;
+			h2 {
+				color: #103073;
+		    text-align: left;
+		    width: 100%;
+		    padding: 0rem 0 1rem 0rem;
+		    position: relative;
+		    z-index: 1;
+
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					background-color: #fed443;
+					height: 3rem;
+					width: 3rem;
+					top: -4.8px;
+					left: -1rem;
+					border-radius: 100%;
+					z-index: -1;
+				}
+			}
+
+			p{
+				text-align: justify;
+			}
+		}
+
+		&-canvas {
+			position: relative;
+			min-height: 400px;
+
+			canvas {
+				margin: 2rem auto;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				background: transparent;
+			}
+		}
+
+		&-description {
+			padding-right: 3rem;
+
+			&.hide {
+				display: none;
+			}
+
+		}
+
+		p {
+			font-weight: $font-weight-light;
+		}
+
+		&-aree {
+			list-style: none;
+			margin-bottom: 0;
+
+			@include bp($tb) {
+				padding-left: 50px!important;
+			}
+
+
+			li {
+
+				&::before {
+					background-color: #ffffff
+				}
+
+				p {
+					cursor: pointer;
+
+					&:focus,
+					&:hover,
+					&.active {
+						font-weight: $font-weight-bold;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{% spaceless %}
+
+{#
+  :: CONFIGURATOR MILTIPLE QUESTION ::
+
+  PARAMS:
+  ---- title:															{<string>}
+  ---- subtitle:													{<string>}
+
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set request = question.question|default('Domanda') %}
+{% set answers = question.answers|default({}) %}
+
+{% set field = field|default('answer_'~loop.index) %}
+
+{# Layout #}
+{% endspaceless %}<div class="question question--multi{% if loop.index == 1 %} on{% endif %}">
+	<h3>{{request}}</h3>
+	<div class="answers">
+		{% for answer in answers %}
+			<div class="answer">
+				<label>
+					{% if answer.icon is not empty and answer.icon.url is defined %}<img src="{{answer.icon.url}}" alt="{{answer.icon.alt}}" />{% endif %}
+					<span><input name="{{field}}" type="radio" value="{{answer.answer}}" /> {{answer.answer}}</span>
+				</label>
+			</div>
+		{% endfor %}
+	</div>
+</div>

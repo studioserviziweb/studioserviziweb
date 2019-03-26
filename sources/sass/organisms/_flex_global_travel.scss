@@ -1,0 +1,57 @@
+.flex {
+	&-global_travel {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+
+		.flex-head {
+			text-align: center;
+
+			p {
+				margin-left: auto;
+				margin-right: auto;
+
+				@include bp($tb) {
+					width: 80%;
+				}
+			}
+		}
+
+		.buttons {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+			// padding: 1rem;
+
+			.btn {
+				margin: 0.5rem 1rem;
+			}
+			@include bp($tb) {
+				flex-flow: row nowrap;
+			}
+		}
+
+		&-img {
+			margin: 2rem auto;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+body.agency-template-page-ss {
+	.flex {
+		&-global_travel {
+			.flex-head {
+				h2 {
+					text-align: center;
+					color: $black;
+				}
+			}
+		}
+	}
+
+}

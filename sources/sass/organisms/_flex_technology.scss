@@ -1,0 +1,165 @@
+body.home-template-page-technology-home {
+	.slider {
+		display: none;
+	}
+}
+
+.flex-technology {
+  margin: 30px 0;
+
+  .container{
+    .row{
+
+
+      ul {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: flex-start;
+        -moz-padding-start: 0;
+        -webkit-padding-start: 0;
+        -khtml-padding-start: 0;
+        -o-padding-start: 0;
+        padding-start: 0;
+		    padding: 2.65rem 0.8rem 0 0;
+
+        li {
+          list-style: none;
+          margin-bottom: 35px;
+
+          @include bp($tb) {
+            margin-bottom: 0;
+          }
+
+          &::before {
+            display: none;
+          }
+
+          a {
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 300;
+
+            &.active {
+              font-weight: 600;
+              text-decoration: none;
+
+            }
+          }
+        }
+
+        @include bp($tb) {
+          flex-flow: row;
+        }
+      }
+
+      .tab-content {
+        width: 100%;
+        display: none;
+        padding: 0 15px;
+
+        .flex-head {
+          padding: 15px 0;
+
+					h2 {
+						color: $blue;
+						text-align: left;
+						width: 100%;
+						padding: 2rem 0 2rem 0.5rem;
+						position: relative;
+						z-index: 1;
+
+						&::before {
+							content: '';
+							display: block;
+							position: absolute;
+							background-color: #fed443;
+							height: 3rem;
+							width: 3rem;
+							top: 1.75rem;
+							left: -0.5rem;
+							border-radius: 100%;
+							z-index: -1;
+						}
+
+					}
+
+          h3{
+						color: $black;
+            text-align: center;
+
+            @include bp($tb) {
+              text-align: left;
+            }
+          }
+          p {
+            text-align: center;
+
+            strong {
+              font-weight: bold;
+            }
+
+            @include bp($tb) {
+              text-align: left;
+
+              strong {
+                font-weight: bold;
+              }
+            }
+          }
+
+        }
+
+        &.active{
+          display: block;
+          padding: 0 15px;
+        }
+
+        .tab-pane{
+          margin: 30px 0;
+          display: block;
+
+
+          &-content{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 25px;
+            align-items: center;
+
+            img {
+              width: 100%;
+            }
+
+            .flex-head {
+              padding: 0;
+            }
+
+            .item-image {
+              width: auto;
+              margin-bottom: 15px;
+
+							&.no-right {
+								margin-right: 0;
+								margin-left: 35px;
+							}
+
+              .square {
+                width: 218px;
+              }
+
+              @include bp($tb) {
+                margin-right: 35px;
+              }
+            }
+
+            @include bp($tb) {
+              flex-flow: row;
+            }
+          }
+        }
+      }
+    }
+  }
+}

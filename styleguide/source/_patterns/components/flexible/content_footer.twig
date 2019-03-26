@@ -1,0 +1,19 @@
+<div class="flex flex-content-footer container">
+	<div class="row">
+		<div class="col-md-4 flex-content-footer-item flex-content-footer-int">
+
+			{% include 'components/common/integrate_service.twig' with { contents: contents.integrate_service } only %}
+
+		</div>
+		<div class="col-md-4 flex-content-footer-item flex-content-footer-set">
+
+			{% include 'components/common/applicate_sector.twig' with { contents: contents.applicate_sector } only %}
+
+		</div>
+		<div class="col-md-4 flex-content-footer-item flex-content-footer-cal">
+
+			{% include 'components/common/callus.twig' with { contents: contents.callus } only %}
+
+		</div>
+	</div>
+</div>

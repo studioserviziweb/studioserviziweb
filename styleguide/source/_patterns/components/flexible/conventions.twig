@@ -1,0 +1,89 @@
+{% spaceless %}
+
+{#
+  :: Conventions ::
+
+  PARAMS:
+  ---- title:																			{<string>}
+  ---- image:            			    								{<object>}
+  -------- url:																		{<string>}
+  -------- alt:																		{<string>}
+  -------- width:		 															{<string>}
+  -------- height:	 															{<string>}
+  -------- sizes:																	{<object>}
+  ------------ thumbnail: 	   										{<string>}
+  ------------ thumbnail-width: 									{<string>}
+  ------------ thumbnail-height: 									{<string>}
+  ------------ medium: 														{<string>}
+  ------------ medium-width:											{<string>}
+ 	------------ medium-height: 										{<string>}
+  ------------ medium_large: 											{<string>}
+  ------------ medium_large-width: 								{<string>}
+  ------------ medium_large-height: 							{<string>}
+  ------------ large: 														{<string>}
+  ------------ large-width: 											{<string>}
+  ------------ large-height: 											{<string>}
+	---- items:																			{<object>}
+	-------- title 																	{<string>}
+	-------- description														{<string>}
+	------------ services														{<string>}
+	---------------- title 													{<string>}
+	---------------- link 													{<string>}
+	---------------- image:            							{<object>}
+  -------------------- url:												{<string>}
+  -------------------- alt:												{<string>}
+  -------------------- width:		 									{<string>}
+  -------------------- height:	 									{<string>}
+  -------------------- sizes:											{<object>}
+  ------------------------ thumbnail: 	   				{<string>}
+  ------------------------ thumbnail-width: 			{<string>}
+  ------------------------ thumbnail-height: 			{<string>}
+  ------------------------ medium: 								{<string>}
+  ------------------------ medium-width:					{<string>}
+ 	------------------------ medium-height: 				{<string>}
+  ------------------------ medium_large: 					{<string>}
+  ------------------------ medium_large-width: 		{<string>}
+  ------------------------ medium_large-height: 	{<string>}
+  ------------------------ large: 								{<string>}
+  ------------------------ large-width: 					{<string>}
+  ------------------------ large-height: 					{<string>}
+
+
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set title = contents.title %}
+
+{% set image = contents.image %}
+{% set items = contents.items %}
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-conventions container">
+	<div class="flex-head">
+		<h2>{{title}}</h2>
+		<img src="{{image.url}}" />
+	</div>
+<div class="conventions-item">
+{% for item in items %}
+	<div class="c-item-{{loop.index}} flex-conventions-item{% if loop.length == 1 %} opened{% endif %}">
+		<h2>{{item.title}}</h2>
+		<div class="cont-conv"{% if loop.length == 1 %} style="display:block;"{% endif %}>
+			<div class="descr">{{item.description|raw}}</div>
+			<div class="services">
+			{% for srv in item.services %}
+				<div class="service">
+					<a href="{{srv.link}}">
+						<img src="{{srv.image.url}}" />
+						<h3>{{srv.title}}</h3>
+					</a>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endfor %}
+</div>
+
+</div>

@@ -1,0 +1,93 @@
+{% spaceless %}
+
+{#
+  :: MAP ::
+
+  PARAMS:
+
+
+
+
+  USAGE:
+  - include
+#}
+{# Variables set #}
+{% set center = contents.center %}
+{% set zoom = contents.zoom %}
+{% set iPoint = contents.interest_point %}
+{% set site = contents.site %}
+
+
+
+{# Layout #}
+{% endspaceless %}<div class="flex flex-map container">
+<div class="flex-map-search">
+	<h4>Cerca le nostre sedi</h4>
+	<form id="map-search" action="" method="post">
+		<input type="text" name="address" value="">
+		<button type="submit" value="Submit"><i class="icon-search"></i></button>
+	</form>
+</div>
+
+<div class="flex-map-container">
+  <div id="map" class="flex-map-map">
+
+  </div>
+
+</div>
+
+  <script>
+			var map;
+
+      function initMap() {
+        var headquarter = {lat: {{center.lat}}, lng: {{center.lng}} };
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: {{zoom}},
+          center: headquarter
+        });
+
+
+        var redIco = '{{site.theme.link}}/assets/images/marker-red.png'
+        var marker = new google.maps.Marker({
+          position: headquarter,
+          map: map,
+          icon:redIco
+        });
+
+        {% for point in iPoint %}
+
+          {% if point.color == '#6994f5' %}
+            {% set color = 'blue' %}
+          {% elseif point.color == '#ffcf28' %}
+  					{% set color = 'yellow' %}
+  				{% elseif point.color == '#da0e1c' %}
+  					{% set color = 'red' %}
+  				{% endif %}
+
+  				var ico{{loop.index}} = '{{site.theme.link}}/assets/images/marker-{{color}}.png'
+          var latLon{{loop.index}} = {lat: {{point.coordinate.lat}}, lng: {{point.coordinate.lng}} };
+          var marker{{loop.index}} = new google.maps.Marker({
+            position: latLon{{loop.index}},
+            map: map,
+            title: '{{point.title}}',
+            icon: ico{{loop.index}},
+            url: '{{point.link}}'
+          });
+
+          google.maps.event.addListener(marker{{loop.index}}, 'click', function() {
+            window.location.href = this.url;
+          });
+        {% endfor %}
+
+      }
+console.log(map);
+
+  </script>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVDLI9lNYAdqUpU9a_aVN6C0IgPLZ3DjU&callback=initMap">
+  </script>
+
+
+
+</div>

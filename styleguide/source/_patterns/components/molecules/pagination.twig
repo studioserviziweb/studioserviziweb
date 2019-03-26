@@ -1,0 +1,35 @@
+{% if posts.pagination.pages is not empty %}
+    <div class="pagination-block">
+        <ul class="pagination">
+
+            {% if pagination.prev %}
+                    <a href="{{ pagination.prev.link }}" class="prev btn">&lt;</a>
+            {% else %}
+                    <a class="prev btn disabled">&lt;</a>
+            {% endif %}
+
+            {% for page in pagination.pages %}
+                {% if page.link %}
+                    <li>
+                        <a href="{{ page.link }}" class="{{ page.class }}">{{ page.title }}</a>
+                    </li>
+                {% else %}
+                    <li class="current">
+                        <a class="{{ page.class }}">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+
+            {% if pagination.next %}
+                    <a class="next btn" href="{{ pagination.next.link }}">
+                        &gt;
+                    </a>
+            {% else %}
+                    <a class="next btn disabled">
+                        &gt;
+                    </a>
+            {% endif %}
+
+        </ul>
+    </div>
+{% endif %}

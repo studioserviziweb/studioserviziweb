@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{% block contentTop %}
+	<div class="archive-page">
+		{% include 'components/organisms/header_single.twig' with { image : headImage, title: title, search: true } only %}
+
+{% endblock %}
+
+{% block content %}
+	{% include 'components/flexible/news.twig' with {contents: news_query} only %}
+	<div class="more">
+		<div class="spinner hidden"></div>
+		{% include 'components/atoms/cta.twig' with { link: '', label: 'SCOPRI DI PIÙ', classes: 'more-btn', inverted: inverted, catId: news_query.archCatId, termType: news_query.termType } only %}
+	</div>
+</div>
+{% endblock %}

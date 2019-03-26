@@ -1,0 +1,16 @@
+.editorial {
+	&-item {
+		&-text {
+			font-weight: $font-weight-base;
+
+			&.inverted {
+				color: $white;
+			}
+
+			&.offer {
+				font-size: (18 / 16) * 1rem;
+				font-weight: $font-weight-light;
+			}
+		}
+	}
+}

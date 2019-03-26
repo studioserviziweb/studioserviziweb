@@ -1,0 +1,68 @@
+{% spaceless %}
+
+{#
+  :: NEWS FEED ITEM ::
+
+  PARAMS:
+	- item:	featured or news			{<object>}
+
+  USAGE:
+  - include
+#}
+
+{# Variables set #}
+{% set type = item.type | default('carousel') %}
+{% set color = item.color | default(empty) %}
+{% set section = item.section | default(empty) %}
+{% set image = item.image | default(empty) %}
+{% set link = item.link | default(empty) %}
+{% set title = item.title | default(item.post_title) | default(empty) %}
+{% set description = item.description | default(item.post_excerpt) | default(empty) %}
+
+{% set inverted = item.inverted | default(false) %}
+{% set btnClasses = item.btnClasses | default(empty) %}
+{% set btnLabel = 'CONTINUA A LEGGERE' %}
+
+{% if type == 'featured' %}
+	{% set inverted = true %}
+	{#% set btnClasses = btnClasses~'btn--offer' %#}
+	{% set btnLabel = 'SCOPRI L\'OFFERTA' %}
+
+	{% if color is not empty and color != '#103073' %}
+		{% set classes = classes~' item--type-b' %}
+	{% endif %}
+{% endif %}
+
+{# Layout #}
+{% endspaceless %}{% if type == 'carousel' %}
+	<div class="item-{{loop.index}} flex-carousel-item">
+		<img src="{{image.url}}" />
+		<div class="flex-carousel-data">
+			<div class="dot-showcase-wrapper">
+				<h4>{{title}}</h4>
+				<p>{{description}}</p>
+			</div>
+			<div class="cta">
+				{% include 'components/atoms/cta.twig' with { link: link, label: btnLabel, inverted: true } only %}
+			</div>
+		</div>
+	</div>
+{% else %}<div class="item item-{{loop.index}} flex-carousel-item item--{{type}} {{classes}}">
+	<div class="item--content" style="{% if type == 'post' and image is not empty %}background-image: url('{{image.src}}');{% endif %}{% if color is not empty %}background-color: {{color}};{% endif %}">
+		{% if section is not empty %}<div class="section">{{section.name|raw}}</div>{% endif %}
+		<div class="flex-carousel-data">
+			<div class="dot-showcase-wrapper{% if type == 'featured'%}-featured{% endif %}">
+				<h4>{{title}}</h4>
+				<p>{{description}}</p>
+			</div>
+			<div class="dot-showcase-wrapper-opened">
+				<h4>{{title}}</h4>
+				<p>{{description}}</p>
+			</div>
+			<div class="cta">
+				{% include 'components/atoms/cta.twig' with { link: link, label: btnLabel, classes: btnClasses, inverted: inverted } only %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
